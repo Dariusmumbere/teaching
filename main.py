@@ -43,7 +43,7 @@ from sqlalchemy.orm import declarative_base
 # Database setup
 # ---------------------------------------------------------------------------
 
-RAW_DATABASE_URL = os.environ.get("DATABASE_URL", "").strip()
+RAW_DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql://neondb_owner:npg_lM6xSkioDpJ7@ep-little-dawn-atd85ita.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require").strip()
 if not RAW_DATABASE_URL:
     raise RuntimeError(
         "DATABASE_URL environment variable is required, e.g. "
